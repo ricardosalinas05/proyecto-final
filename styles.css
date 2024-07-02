@@ -1,0 +1,164 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.video-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+video {
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content {
+    position: absolute;
+    color: burlywood;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    text-align: center;
+    z-index: 1;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none; /* Añadido para quitar el subrayado del enlace */
+    display: inline-block; /* Añadido para asegurar que el enlace se comporte como botón */
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos específicos para la página siguiente */
+.image-background {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.image-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bicho{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.bicho h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.bicho p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.image-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.content
+ {
+    position: relative;
+    z-index: 1;
+    max-width: 800px; /* Ajusta el ancho máximo del contenido como desees */
+    margin: 50px auto; /* Centra el contenido horizontalmente */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.content h1 {
+    text-align: right 20px;
+    font-size: 3rem;
+    color: bisque; /* Alinea el texto del h1 a la derecha */
+}
+
+.content p {
+    text-align: right 20px; /* Alinea el texto del párrafo a la derecha */
+    margin-top: 20px; /* Espacio superior entre el h1 y el párrafo */
+    font-size: 2rem;
+    color: azure;
+}
+
+.container {
+    width: 100%; /* Opcional: ajusta el ancho del contenedor */
+    height: 100vh; /* Ajusta la altura del contenedor como desees */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Oculta cualquier parte de la imagen que sobresalga del contenedor */
+    position: relative; /* Añade posición relativa para alinear la imagen */
+}
+
+/* Estilos para la imagen */
+.container img {
+    width: 7%; /* Ajusta el tamaño de la imagen mediana */
+    height: auto; /* Mantiene la proporción de la imagen */
+    position: fixed; /* Mantiene la imagen fija en la ventana */
+    top: 12%; /* Ajusta la posición verticalmente al centro */
+    left: 38%; /* Ajusta la posición horizontalmente al centro */
+    transform: translate(-50%, -50%); /* Centra la imagen exactamente en el centro */
+    transition: transform 0.3s ease; /* Transición suave de la propiedad transform */
+
+}
+
+.container img:hover{
+    transform: scale(1.1); 
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Aplica la animación de pulsación */
+.image-container img.pulsate {
+    animation: pulse 2s infinite;
+}
